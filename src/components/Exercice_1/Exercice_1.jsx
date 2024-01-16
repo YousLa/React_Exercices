@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+import style from './style.module.css';
 
 const FichePerson = (props) => {
     //! Destructuring 
@@ -9,8 +10,8 @@ const FichePerson = (props) => {
 
     return (
         <div>
-            <p>Bienvenue {name} sur l'application React !</p>
-            <p>Vous avez {age} ans !</p>
+            <p className={style.title}>Bienvenue {name} sur l'application React !</p>
+            <p className={style.grey}>Vous avez {age} ans !</p>
         </div>
     )
 }
