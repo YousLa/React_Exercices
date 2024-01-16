@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 
+
 const FichePerson = (props) => {
     //! Destructuring 
-    // Pour pouvoir récupérer chacune des propriétés de l'objet props dans une variable, plutôt qu'écrire à chaque fois props.firstname, props.lastname etc...
+    // Pour pouvoir récupérer chacune des propriétés de l'objet props dans une variable, plutôt qu'écrire à chaque fois props.name, props.age
 
     const { name, age } = props;
 

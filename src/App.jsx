@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <FichePerson />
+      <FichePerson name="Yousra" age={27} />
     </>
   )
 }
