@@ -1,8 +1,7 @@
 import "./style.css";
+import ProductCard from "./ProductCard";
 
-import React from 'react'
-
-function Product() {
+const Product = (props) => {
 
     const products = [
         { id: 1, name: "Pomme", price: 0.50, promo: true, picture: "src/assets/img/pomme.png" },
@@ -12,7 +11,7 @@ function Product() {
 
     return (
         <>
-            {products.map(product => <ProductCard key={product.id} nom={product.name} prix={product.promo} />)}
+            {products.map(product => <ProductCard key={product.id} name={product.name} promo={product.promo} picture={product.picture} price={product.price} />)}
         </>
     )
 }

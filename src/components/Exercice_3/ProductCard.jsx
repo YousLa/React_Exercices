@@ -1,11 +1,13 @@
-ProductCard = ({ name, picture, price, promo }) => {
+import "./style.css";
+
+const ProductCard = ({ name, price, promo, picture }) => {
 
     return (
-        <div>
+        <div className="products_container">
+            <img src={picture} alt={name} className="product_img" />
             <h4>{name}</h4>
-            <img src={picture} alt={name} />
             {promo ?
-                (<p className="promo">{price} €</p>)
+                (<p className="product_promo">{price} €</p>)
                 :
                 (<p>{price} €</p>)
             }
@@ -13,3 +15,5 @@ ProductCard = ({ name, picture, price, promo }) => {
         </div>
     )
 }
+
+export default ProductCard;

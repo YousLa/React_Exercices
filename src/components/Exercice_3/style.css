@@ -1,0 +1,20 @@
+.product_img {
+    height: 2.5rem;
+}
+
+.products_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border: solid 1px rgb(189, 64, 83);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgb(237, 210, 200);
+    border-radius: 0.5rem;
+}
+
+.product_promo {
+    color: red;
+}
