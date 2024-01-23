@@ -3,6 +3,8 @@ import FichePerson from './components/Exercice_1/Exercice_1'
 import Animal from './components/Exercice_2/Exercice_2'
 import Product from './components/Exercice_3/Exercice_3'
 
+import Compteur from './components/Exercice_4/Exercice_4'
+
 function App() {
 
   return (
@@ -18,7 +20,11 @@ function App() {
         <Animal hasAnAnimal={true} type="chat" name="Lola" /> */}
 
         {/* Exercice 3 */}
-        <Product />
+        {/* <Product /> */}
+
+        {/* Exercice 4 */}
+        <Compteur />
+
       </div>
     </>
   )
