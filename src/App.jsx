@@ -28,9 +28,11 @@ function App() {
 
         {/* Correction Exercice 4 */}
         {/* Exercice 4 - Le state */}
-        <Exercice4 increment={2} />
+        {/* <Exercice4 increment={2} />
         <Exercice4 increment={6} />
-        <Exercice4 />
+        <Exercice4 /> */}
+
+        {/* Exercice 5 */}
 
 
       </div>
