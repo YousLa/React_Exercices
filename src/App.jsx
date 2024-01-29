@@ -6,6 +6,7 @@ import Product from './components/Exercice_3/Exercice_3'
 import Compteur from './components/Exercice_4/Exercice_4'
 import Exercice4 from './components/Exercice_4/Correction_04/Exercice4'
 import Form from './components/Exercice_6/Exercice_6'
+import Form2 from './components/Exercice_7/Exercice_7'
 
 function App() {
 
@@ -36,8 +37,10 @@ function App() {
         {/* Exercice 5 */}
 
         {/* Exercice 6 - Formulaire */}
-        <Form />
+        {/* <Form /> */}
 
+        {/* Exercice 7 - Formulaire React Hook Form */}
+        <Form2 />
 
       </div>
     </>
