@@ -5,6 +5,7 @@ import Product from './components/Exercice_3/Exercice_3'
 
 import Compteur from './components/Exercice_4/Exercice_4'
 import Exercice4 from './components/Exercice_4/Correction_04/Exercice4'
+import Form from './components/Exercice_6/Exercice_6'
 
 function App() {
 
@@ -33,6 +34,9 @@ function App() {
         <Exercice4 /> */}
 
         {/* Exercice 5 */}
+
+        {/* Exercice 6 - Formulaire */}
+        <Form />
 
 
       </div>
