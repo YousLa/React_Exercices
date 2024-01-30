@@ -76,7 +76,7 @@ const Form = () => {
 
                 <div>
                     <label htmlFor="comment">Commentaire : </label>
-                    <textarea name="comment" id="comment" cols="30" rows="10" value={inputs.comment} onChange={changeValue}></textarea>
+                    <textarea name="comment" id="comment" cols="30" rows="10" value={inputs.comment} onChange={changeValue} />
                 </div>
 
                 <div>

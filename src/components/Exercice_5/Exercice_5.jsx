@@ -4,7 +4,7 @@ import "./style.css";
 const Calculatrice = () => {
 
     // Inputs et leur valeur par défaut
-    const [inputs, setInputs] = useState({ numbreOne: '', operator: 'addition', numberTwo: '', result: '' })
+    const [inputs, setInputs] = useState({ numberOne: '', operator: 'addition', numberTwo: '', result: '' })
 
     const sendForm = (e) => {
         // On annule l'évènement par défaut du formulaire
@@ -13,7 +13,35 @@ const Calculatrice = () => {
 
         switch (inputs.operator) {
             case "+":
+                setInputs({
+                    // On récupère toutes les propriétés présentes dans l'objet inputes
+                    ...inputs,
+                    result: inputs.numberOne + inputs.numberTwo
+                })
+                break;
 
+            case "-":
+                setInputs({
+                    // On récupère toutes les propriétés présentes dans l'objet inputes
+                    ...inputs,
+                    result: inputs.numberOne - inputs.numberTwo
+                })
+                break;
+
+            case "*":
+                setInputs({
+                    // On récupère toutes les propriétés présentes dans l'objet inputes
+                    ...inputs,
+                    result: inputs.numberOne * inputs.numberTwo
+                })
+                break;
+
+            case "/":
+                setInputs({
+                    // On récupère toutes les propriétés présentes dans l'objet inputes
+                    ...inputs,
+                    result: inputs.numberOne / inputs.numberTwo
+                })
                 break;
 
             default:
@@ -28,7 +56,7 @@ const Calculatrice = () => {
         setInputs({
             // On récupère toutes les propriétés présentes dans l'objet inputes
             ...inputs,
-            [name]: (type === 'checkbox') ? checked : value
+            [name]: value
             //Pour la propriété dont le nom est égal à celui de l'élément html récupéré, on vérifie si c'est un input type checkbox, si oui, on prend l'attribut checked, sinon value
         })
 
@@ -49,22 +77,22 @@ const Calculatrice = () => {
                 <div>
                     <label htmlFor="operator"> Opérateur : </label>
                     <select name="operator" id="operator" value={inputs.operator} onChange={changeValue}>
-                        <option value="inputs.addition">+</option>
-                        <option value="inputs.soustraction">-</option>
-                        <option value="inputs.multiplication">x</option>
-                        <option value="inputs.division">/</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">x</option>
+                        <option value="/">/</option>
                     </select>
                 </div>
 
                 {/* Number Two*/}
                 <div>
-                    <label htmlFor="numberTwo"> Nombre 1 :</label>
+                    <label htmlFor="numberTwo"> Nombre 2 :</label>
                     <input type="text" name="numberTwo" id="numberTwo" value={inputs.numberTwo} onChange={changeValue} />
                 </div>
 
                 {/* Bouton Submit */}
                 <div>
-                    <input type="submit" value={"Envoyer"} />
+                    <input type="submit" value="Envoyer" />
                 </div>
 
                 {/* Résultat */}

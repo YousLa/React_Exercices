@@ -1,0 +1,38 @@
+.flex-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bg-light {
+    background-color: lightyellow;
+}
+
+.h-75 {
+    height: 75vh;
+}
+
+.w-45 {
+    width: 45%;
+}
+
+form * {
+    margin: 0.25rem;
+
+}
+
+.error {
+    color: darkred;
+    font-size: small;
+}
+
+textarea {
+    resize: none;
+}

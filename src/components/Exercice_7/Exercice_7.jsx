@@ -71,7 +71,7 @@ const Form2 = () => {
 
             <div>
                 <label htmlFor="comment">Commentaire : </label>
-                <textarea {...register("comment")} cols="30" rows="10"></textarea>
+                <textarea {...register("comment")} cols="30" rows="10" />
             </div>
 
             <div>
