@@ -9,6 +9,8 @@ import Calculatrice from './components/Exercice_5/Exercice_5'
 import Form from './components/Exercice_6/Exercice_6'
 import Form2 from './components/Exercice_7/Exercice_7'
 
+import ToDoList from './components/Exercice_8/ToDoList'
+
 function App() {
 
   return (
@@ -36,13 +38,16 @@ function App() {
         <Exercice4 /> */}
 
         {/* Exercice 5 */}
-        <Calculatrice />
+        {/* <Calculatrice /> */}
 
         {/* Exercice 6 - Formulaire */}
         {/* <Form /> */}
 
         {/* Exercice 7 - Formulaire React Hook Form */}
         {/* <Form2 /> */}
+
+        {/* Exercice 8 */}
+        <ToDoList />
 
       </div>
     </>
